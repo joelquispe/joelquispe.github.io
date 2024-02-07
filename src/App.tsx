@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useRef, useState } from "react";
+
+import "./App.css";
+import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
+import { IoMenu } from "react-icons/io5";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const refDrawer = useRef(null);
+  const onDrawer = ()=>{
 
+  }
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen w-screen  bg-background">
+      <div ref={refDrawer} className="absolute min-h-screen w-52 left-0 bg-white">
+        <h1>Mi titulo</h1>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="absolute text-2xl top-3 left-3">
+        <div className="text-white"><IoMenu onClick={onDrawer}/></div>
+      
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      {/* <TypeAnimation
+        sequence={[
+          // Same substring at the start will only be typed out once, initially
+          "Joel Alexander Sosaya Quispe - Desarrollador Full Stack",
+        ]}
+        wrapper="span"
+        speed={50}
+        className="text-white "
+        style={{ fontSize: "2em", display: "inline-block" }}
+        cursor={false}
+        repeat={Infinity}
+      /> */}
+      
+    </div>
+  );
 }
 
-export default App
+export default App;
