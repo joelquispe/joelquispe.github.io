@@ -1,34 +1,9 @@
-import { createRef } from 'react';
 import './App.css';
 import { FaGithub, FaGitlab } from 'react-icons/fa';
-import { CgMenuGridR } from 'react-icons/cg';
-import DrawerComp from './ui/components/drawer.comp';
+
 function App() {
-	const refDrawer = createRef<HTMLDivElement>();
-	const onDrawer = () => {
-		// console.log(refDrawer.current);
-		// refDrawer.current?.classList.toggle('scale-0');
-	};
 	return (
 		<div className="min-h-screen w-screen  bg-background">
-			{/* <div
-				ref={refDrawer}
-				className="absolute transition-all duration-500 delay-75 ease-in-out min-h-screen w-screen scale-0
-				flex justify-center items-center
-				"
-			>
-				<div className=" grid gap-3">
-					<p className="text-2xl font-semibold text-white text-center">Home</p>
-					<p className="text-2xl font-semibold text-white text-center">
-						Proyects
-					</p>
-					<p className="text-2xl font-semibold text-white text-center">
-						Contact
-					</p>
-					<p className="text-2xl font-semibold text-white text-center">About</p>
-				</div>
-			</div> */}
-
 			<div id="navbar" className="absolute text-2xl top-3 left-3 flex gap-x-4">
 				<div className="text-white"></div>
 				<div className="text-white">

@@ -1,6 +1,5 @@
 import CardProjectComp from './card-project.comp';
-import { MdWeb } from 'react-icons/md';
-import { useState } from 'react';
+
 import {
 	ChakraProvider,
 	Tab,
@@ -35,19 +34,16 @@ const theme = extendTheme({
 });
 
 const ProjectsPage = () => {
-	const [device, setDevice] = useState('Mobile');
 	return (
 		<ChakraProvider theme={theme}>
 			<div className=" flex flex-col  h-full w-full gap-y-4 pt-5">
-				<Tabs  size={'md'} variant="customColor" align="center">
-					<TabList  > 
-						<Tab >Mobile</Tab>
+				<Tabs size={'md'} variant="customColor" align="center">
+					<TabList>
+						<Tab>Mobile</Tab>
 						<Tab>Web</Tab>
 						<Tab>Desktop</Tab>
 					</TabList>
-				<TabIndicator
-				borderBottom={"1px solid cyan"}
-				></TabIndicator>
+					<TabIndicator borderBottom={'1px solid cyan'}></TabIndicator>
 					<TabPanels>
 						<TabPanel className="flex flex-col gap-y-3 text-start">
 							<CardProjectComp title="My app" />

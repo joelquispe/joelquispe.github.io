@@ -1,16 +1,5 @@
-import {
-	BiLogoAngular,
-	BiLogoFlutter,
-	BiLogoJavascript,
-	BiLogoPhp,
-	BiLogoPostgresql,
-	BiLogoReact,
-	BiLogoTypescript,
-} from 'react-icons/bi';
-import { FaAws, FaPhp, FaSwift } from 'react-icons/fa';
 import { MdEmail, MdWhatsapp } from 'react-icons/md';
-import { SiDart, SiDocker, SiFigma, SiFirebase, SiKotlin, SiMysql, SiNestjs, SiPhp, SiSupabase, SiTailwindcss } from 'react-icons/si';
-import { TbBrandReactNative } from 'react-icons/tb';
+
 import TechnologiesComp from '../../components/technologies.comp';
 
 const HomePage = () => {
@@ -45,11 +34,7 @@ const HomePage = () => {
 				</div>
 			</div>
 			<div className="hidden xl:flex lg:flex-wrap gap-5   w-full h-full  items-center justify-center relative">
-			
-					<TechnologiesComp />
-					
-					
-				
+				<TechnologiesComp />
 			</div>
 		</div>
 	);
