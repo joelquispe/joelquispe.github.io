@@ -3,24 +3,43 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Disket_Mono_Regular;
-  src: url("../assets/fonts/Disket-Mono-Regular.ttf");
-  font-weight: medium;
+	font-family: Disket_Mono_Regular;
+	src: url('../public/fonts/Disket-Mono-Regular.ttf');
+	font-weight: medium;
+}
+@font-face {
+	font-family: Slabo_Regular;
+	src: url('../public/fonts/Slabo27px-Regular.ttf');
+	font-weight: medium;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-p{
-  color: white;
-}
-body{
-  
-  
+@font-face {
+	font-family: Raleway_Regular;
+	src: url('../public/fonts/Raleway-Regular.ttf');
+	font-weight: medium;
 }
 
-h1,h2,h3,h4,h5,h6,p,span{
-  font-family: Disket_Mono_Regular;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+p {
+	color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+
+p,
+span {
+	/* font-family: Disket_Mono_Regular; */
+  /* font-family: Slabo_Regular; */
+  font-family: Raleway_Regular;
+ 
 }

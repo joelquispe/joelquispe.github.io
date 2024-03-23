@@ -18,18 +18,21 @@ const DrawerComp = forwardRef(
 				<div className=" grid gap-3">
 					<Link
 						to={'/'}
+						style={{ fontFamily: 'Raleway_Regular' }}
 						className="text-2xl font-semibold text-white text-center cursor-pointer"
 					>
 						Home
 					</Link>
 					<Link
 						to={'/projects'}
-						className="text-2xl font-semibold text-white text-center cursor-pointer"
+						style={{ fontFamily: 'Raleway_Regular' }}
+						className="text-2xl  font-semibold text-white text-center cursor-pointer"
 					>
 						Projects
 					</Link>
 					<Link
 						to={'/technologies'}
+						style={{ fontFamily: 'Raleway_Regular' }}
 						className="xl:hidden text-2xl font-semibold text-white text-center cursor-pointer"
 					>
 						Technologies

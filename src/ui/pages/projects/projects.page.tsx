@@ -1,3 +1,4 @@
+import { dataApps, dataWebs } from '../../../common/data/data';
 import CardProjectComp from './card-project.comp';
 
 import {
@@ -36,7 +37,7 @@ const theme = extendTheme({
 const ProjectsPage = () => {
 	return (
 		<ChakraProvider theme={theme}>
-			<div className=" flex flex-col  h-full w-full gap-y-4 pt-5">
+			<div className=" flex flex-col  h-full w-full gap-y-4 pt-5 lg:px-16 2xl:px-28">
 				<Tabs size={'md'} variant="customColor" align="center">
 					<TabList>
 						<Tab>Mobile</Tab>
@@ -45,20 +46,32 @@ const ProjectsPage = () => {
 					</TabList>
 					<TabIndicator borderBottom={'1px solid cyan'}></TabIndicator>
 					<TabPanels>
-						<TabPanel className="flex flex-col gap-y-3 text-start">
-							<CardProjectComp title="My app" />
-							<CardProjectComp title="My app" />
-							<CardProjectComp title="My app" />
-							<CardProjectComp title="My app" />
+						<TabPanel className="grid xl:grid-cols-2 gap-y-4 xl:gap-x-5 text-start">
+							{dataApps.map((item) => (
+								<CardProjectComp
+									key={item.title}
+									title={item.title}
+									description={item.description}
+									githubUrl={item.githubUrl}
+									projectUrl={item.projectUrl}
+									technologies={item.technologies}
+								/>
+							))}
 						</TabPanel>
-						<TabPanel className="flex flex-col gap-y-3 text-start">
-							<CardProjectComp title="Web" />
-							<CardProjectComp title="Web app" />
-							<CardProjectComp title="My app" />
-							<CardProjectComp title="My app" />
+						<TabPanel className="grid xl:grid-cols-2 gap-y-4 xl:gap-x-5 text-start">
+						{dataWebs.map((item) => (
+								<CardProjectComp
+									key={item.title}
+									title={item.title}
+									description={item.description}
+									githubUrl={item.githubUrl}
+									projectUrl={item.projectUrl}
+									technologies={item.technologies}
+								/>
+							))}
 						</TabPanel>
-						<TabPanel>
-							<p>three!</p>
+						<TabPanel className="grid xl:grid-cols-2 gap-y-4 xl:gap-x-5 text-start">
+							<p className='text-2xl'>En proceso</p>
 						</TabPanel>
 					</TabPanels>
 				</Tabs>

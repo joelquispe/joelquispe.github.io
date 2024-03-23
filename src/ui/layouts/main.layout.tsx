@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { CgMenuGridR } from 'react-icons/cg';
-import { FaGithub, FaGitlab } from 'react-icons/fa';
+import { FaGithub, FaGitlab, FaYoutube } from 'react-icons/fa';
 import { Outlet } from 'react-router-dom';
 import DrawerComp from '../components/drawer.comp';
 
@@ -13,7 +13,7 @@ const MainLayout = () => {
 	};
 	return (
 		<>
-			<div className="min-h-screen min-w-screen flex flex-col  bg-background  p-5  ">
+			<div className="min-h-screen min-w-screen flex flex-col  bg-background  p-5 ">
 				<DrawerComp ref={refDrawer} onCloseDrawer={() => onDrawer()} />
 
 				<div id="navbar" className="text-2xl top-3 left-3 flex gap-x-4 ">
@@ -33,6 +33,13 @@ const MainLayout = () => {
 						className="text-white cursor-pointer"
 					>
 						<FaGitlab />
+					</a>
+					<a
+						href="https://youtube.com/yoecode"
+						target="_blank"
+						className="text-white cursor-pointer"
+					>
+						<FaYoutube />
 					</a>
 				</div>
 				<div
