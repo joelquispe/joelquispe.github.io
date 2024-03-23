@@ -4,6 +4,7 @@ import { useState } from 'react';
 import {
 	ChakraProvider,
 	Tab,
+	TabIndicator,
 	TabList,
 	TabPanel,
 	TabPanels,
@@ -38,13 +39,15 @@ const ProjectsPage = () => {
 	return (
 		<ChakraProvider theme={theme}>
 			<div className=" flex flex-col  h-full w-full gap-y-4 pt-5">
-				<Tabs variant="customColor" align="center">
-					<TabList>
-						<Tab>Mobile</Tab>
+				<Tabs  size={'md'} variant="customColor" align="center">
+					<TabList  > 
+						<Tab >Mobile</Tab>
 						<Tab>Web</Tab>
 						<Tab>Desktop</Tab>
 					</TabList>
-
+				<TabIndicator
+				borderBottom={"1px solid cyan"}
+				></TabIndicator>
 					<TabPanels>
 						<TabPanel className="flex flex-col gap-y-3 text-start">
 							<CardProjectComp title="My app" />

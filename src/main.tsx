@@ -7,6 +7,7 @@ import AboutPage from './ui/pages/about/about.page.tsx';
 import ProjectsPage from './ui/pages/projects/projects.page.tsx';
 import ContactPage from './ui/pages/contact/contact.page.tsx';
 import MainLayout from './ui/layouts/main.layout.tsx';
+import TechnologiesPage from './ui/pages/technologies/technologies.page.tsx';
 
 const router = createBrowserRouter([
 	{
@@ -21,8 +22,8 @@ const router = createBrowserRouter([
 				element: <ProjectsPage />,
 			},
 			{
-				path: '/about',
-				element: <AboutPage />,
+				path: '/Technologies',
+				element: <TechnologiesPage />,
 			},
 			{
 				path: '/contact',

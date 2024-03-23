@@ -29,10 +29,10 @@ const DrawerComp = forwardRef(
 						Projects
 					</Link>
 					<Link
-						to={'/about'}
-						className="text-2xl font-semibold text-white text-center cursor-pointer"
+						to={'/technologies'}
+						className="xl:hidden text-2xl font-semibold text-white text-center cursor-pointer"
 					>
-						About
+						Technologies
 					</Link>
 				</div>
 			</div>

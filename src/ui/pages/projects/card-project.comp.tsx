@@ -9,17 +9,17 @@ const CardProjectComp = (props:IProps) => {
 			<div className="absolute bottom-0 left-0 h-0.5 w-24 bg-gradient-to-r from-cyan-400 to-sky-950 z-40"></div>
 			<div className="absolute bottom-0 left-0 h-20 w-0.5 bg-gradient-to-b from-sky-950 to-cyan-400 "></div>
 			<div className="  grid grid-cols-2 grid-flow-dense   gap-x-3 items-center justify-items-start w-fit mb-3 hover:scale-x-[1.05] transition-all duration-500 delay-75 ease-in-out">
-				<p className="group-hover:text-text_cyan text-xl font-semibold transition-all duration-500  ease-in-out  ">{props.title}</p>
+				<p className="group-hover:text-text_cyan text-xl lg:text-2xl font-semibold transition-all duration-500  ease-in-out  ">{props.title}</p>
 				<FaArrowUpRightFromSquare className="text-white text-start group-hover:scale-110 group-hover:text-text_cyan transition-all duration-500  ease-in-out" />
 			</div>
 
-			<p className="text-sm mb-2 text-gray-300">
+			<p className="text-sm lg:text-base mb-4 text-gray-400">
 				My app is best app developer flutter in nestjs in backent with 6 months
 				of time in lives of tiktok, youtube, etc
 			</p>
 			<div className="flex flex-wrap gap-2">
 				<div className=" px-2.5 py-1.5 flex justify-center items-center bg-sky-950  rounded-lg">
-					<p className="text-xs font-semibold text-text_cyan">Javascript</p>
+					<p className="text-xs lg:text-sm font-semibold text-text_cyan">Javascript</p>
 				</div>
 				<div className=" px-2.5 py-1.5 flex justify-center items-center bg-sky-950  rounded-lg">
 					<p className="text-xs font-semibold text-text_cyan">C#</p>
