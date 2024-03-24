@@ -13,6 +13,7 @@ import {
 	SiFigma,
 	SiFirebase,
 	SiKotlin,
+	SiMongodb,
 	SiMysql,
 	SiNestjs,
 	SiPhp,
@@ -102,6 +103,10 @@ const TechnologiesComp = () => {
 			<div className="py-3 px-4 bg-primary rounded-lg flex items-center gap-x-3">
 				<SiTailwindcss className="text-cyan-400 text-3xl" />
 				<p className="font-semibold text-text_cyan">Tailwind</p>
+			</div>
+			<div className="py-3 px-4 bg-primary rounded-lg flex items-center gap-x-3">
+				<SiMongodb className="text-cyan-400 text-3xl" />
+				<p className="font-semibold text-text_cyan">MongoDB</p>
 			</div>
 		</div>
 	);

@@ -5,5 +5,8 @@ export interface IProject {
 	description: string;
 	projectUrl?: string;
 	githubUrl?: string;
+	webUrl?: string;
+	playStoreUrl?: string;
+	appStoreUrl?: string;
 	technologies: ITec[];
 }

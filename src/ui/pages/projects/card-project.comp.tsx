@@ -1,13 +1,18 @@
 import { useState } from 'react';
-import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaAppStoreIos, FaGithub } from 'react-icons/fa';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { ITec } from '../../../common/interfaces/tec.interface';
+import { MdWeb } from 'react-icons/md';
+import { IoLogoGooglePlaystore } from 'react-icons/io5';
 
 interface IProps {
 	title: string;
 	description: string;
 	projectUrl?: string;
 	githubUrl?: string;
+	playStoreUrl?: string;
+	appStoreUrl?: string;
+	webUrl?: string;
 	technologies: ITec[];
 }
 const CardProjectComp = (props: IProps) => {
@@ -22,7 +27,7 @@ const CardProjectComp = (props: IProps) => {
 			<div className="absolute bottom-0 left-0 h-20 w-0.5 bg-gradient-to-b from-sky-950 to-cyan-400 "></div>
 
 			<div
-				className={`flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-4 ${
+				className={`flex  flex-wrap w-full  justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-2 lg:gap-4 ${
 					isBlur ? 'z-50' : ''
 				}`}
 			>
@@ -31,26 +36,50 @@ const CardProjectComp = (props: IProps) => {
 						href={props.githubUrl}
 						onClick={() => setIsBlur(!isBlur)}
 						target="_blank"
-						className={` flex transition-all duration-500 delay-75 ease-in-out items-center px-4 py-3   text-white bg-slate-900 rounded-md text-sm ${
+						className={` flex transition-all duration-500 delay-75 ease-in-out items-center px-4 py-2 lg:py-3    text-white bg-slate-900 rounded-md text-sm ${
 							isBlur ? 'scale-105' : 'scale-0'
 						}`}
 					>
-						<div>
+						<div className="xl:text-xl">
 							<FaGithub />
 						</div>
-						<p className="pl-3">Github</p>
+						<p className="pl-3 xl:text-lg">Github</p>
 					</a>
 				)}
-				{props.projectUrl != null && (
+				{props.webUrl != null && (
 					<a
-						href={props.projectUrl}
+						href={props.webUrl}
+						onClick={() => setIsBlur(!isBlur)}
+						className={` flex transition-all duration-500 delay-75 ease-in-out items-center px-4 py-2 lg:py-3    text-white bg-slate-900 rounded-md text-sm  ${
+							isBlur ? 'scale-105' : 'scale-0 '
+						}`}
+					>
+						<MdWeb className="xl:text-xl" />
+						<p className="pl-3 xl:text-lg">Web</p>
+					</a>
+				)}
+				{props.playStoreUrl != null && (
+					<a
+						href={props.playStoreUrl}
+						onClick={() => setIsBlur(!isBlur)}
+						className={` flex transition-all duration-500 delay-75 ease-in-out items-center px-4 py-2 lg:py-3    text-white bg-slate-900 rounded-md text-sm ${
+							isBlur ? 'scale-105' : 'scale-0 '
+						}`}
+					>
+						<IoLogoGooglePlaystore className="xl:text-xl" />
+						<p className="pl-3 xl:text-lg">Play Store</p>
+					</a>
+				)}
+				{props.appStoreUrl != null && (
+					<a
+						href={props.appStoreUrl}
 						onClick={() => setIsBlur(!isBlur)}
 						className={` flex transition-all duration-500 delay-75 ease-in-out items-center px-4 py-3   text-white bg-slate-900 rounded-md text-sm ${
 							isBlur ? 'scale-105' : 'scale-0 '
 						}`}
 					>
-						<FaLink />
-						<p className="pl-3">Ver proyecto</p>
+						<FaAppStoreIos className="xl:text-xl" />
+						<p className="pl-3 xl:text-lg">App Store</p>
 					</a>
 				)}
 			</div>
@@ -68,8 +97,7 @@ const CardProjectComp = (props: IProps) => {
 				</div>
 
 				<p className="text-sm lg:text-base mb-4 text-gray-400">
-					My app is best app developer flutter in nestjs in backent with 6
-					months of time in lives of tiktok, youtube, etc
+					{props.description}
 				</p>
 				<div className="flex flex-wrap gap-4 items-center">
 					{/* {props.technologies.map((tech)=> 	<div key={tech.title} className=" px-2.5 py-1.5 flex justify-center items-center bg-sky-950  rounded-lg">

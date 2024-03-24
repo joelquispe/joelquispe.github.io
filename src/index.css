@@ -4,18 +4,18 @@
 
 @font-face {
 	font-family: Disket_Mono_Regular;
-	src: url('../public/fonts/Disket-Mono-Regular.ttf');
+	src: url('../fonts/Disket-Mono-Regular.ttf');
 	font-weight: medium;
 }
 @font-face {
 	font-family: Slabo_Regular;
-	src: url('../public/fonts/Slabo27px-Regular.ttf');
+	src: url('../fonts/Slabo27px-Regular.ttf');
 	font-weight: medium;
 }
 
 @font-face {
 	font-family: Raleway_Regular;
-	src: url('../public/fonts/Raleway-Regular.ttf');
+	src: url('../fonts/Raleway-Regular.ttf');
 	font-weight: medium;
 }
 

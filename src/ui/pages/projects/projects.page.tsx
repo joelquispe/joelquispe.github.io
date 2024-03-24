@@ -53,7 +53,9 @@ const ProjectsPage = () => {
 									title={item.title}
 									description={item.description}
 									githubUrl={item.githubUrl}
-									projectUrl={item.projectUrl}
+									webUrl={item.webUrl}
+									appStoreUrl={item.appStoreUrl}
+									playStoreUrl={item.playStoreUrl}
 									technologies={item.technologies}
 								/>
 							))}
@@ -65,13 +67,15 @@ const ProjectsPage = () => {
 									title={item.title}
 									description={item.description}
 									githubUrl={item.githubUrl}
-									projectUrl={item.projectUrl}
+									webUrl={item.webUrl}
+									appStoreUrl={item.appStoreUrl}
+									playStoreUrl={item.playStoreUrl}
 									technologies={item.technologies}
 								/>
 							))}
 						</TabPanel>
-						<TabPanel className="grid xl:grid-cols-2 gap-y-4 xl:gap-x-5 text-start">
-							<p className='text-2xl'>En proceso</p>
+						<TabPanel className="grid  gap-y-4 xl:gap-x-5 text-start">
+							<p className='text-2xl text-center animate-pulse '>En camino</p>
 						</TabPanel>
 					</TabPanels>
 				</Tabs>

@@ -4,7 +4,7 @@ import TechnologiesComp from '../../components/technologies.comp';
 
 const HomePage = () => {
 	return (
-		<div className="grid  2xl:grid-cols-[42%_1fr] items-center gap-x-8 mx-auto 2xl:mx-0  justify-center  w-10/12  sm:w-full md:px-20 lg:px-40">
+		<div className="grid  2xl:grid-cols-[42%_1fr] items-center gap-x-8 mx-auto 2xl:mx-0  justify-center  w-10/12  sm:w-full px-5 md:px-20 lg:px-40">
 			<div className="">
 				<img
 					src={'/img/profile.jpg'}
@@ -16,10 +16,7 @@ const HomePage = () => {
 					Developer Full-Stack
 				</h1>
 				<p className="text-gray-300 text-base sm:text-base lg:text-lg text-center lg:text-start  ">
-					Nací el 22 de noviembre del año 2000, me gusta hacer deporte pero me
-					apasionar crear software ya que disfruto de esto y me encanta aprender
-					nuevas tecnologías de forma autodidacta así como también de los que
-					saber porque nunca se termina de aprender todo.
+				Desarrollador con 2 años de experiencia y 23 años de edad. Apasionado por la innovación tecnológica y comprometido con la excelencia en cada proyecto. Especializado en desarrollo front-end y back-end.
 				</p>
 				<div className='w-full h-[2px] bg-gray-200 opacity-20 my-4 md:my-6'></div>
 				<div className="">
@@ -34,6 +31,7 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
+			<div className='2xl:hidden xl:block hidden w-full h-[2px] bg-gray-200 opacity-20 my-5 '></div>
 			<div className="hidden xl:flex lg:flex-wrap gap-5   w-full h-full  items-center justify-center relative">
 				<TechnologiesComp />
 			</div>
