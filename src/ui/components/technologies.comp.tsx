@@ -23,7 +23,7 @@ import { TbBrandReactNative } from 'react-icons/tb';
 
 const TechnologiesComp = () => {
 	return (
-		<div className="p-8 lg:bg-slate-950 rounded-xl flex flex-wrap gap-x-4 gap-y-8 lg:gap-10 justify-center  ">
+		<div className="p-8  rounded-xl flex flex-wrap gap-x-4 gap-y-8 lg:gap-10 justify-center  ">
 			
 			<div className="py-3 px-4 bg-primary rounded-lg flex items-center gap-x-3 ">
 				<BiLogoJavascript className="text-cyan-400 text-3xl" />
