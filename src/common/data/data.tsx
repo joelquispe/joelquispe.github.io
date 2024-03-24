@@ -234,7 +234,7 @@ export const dataApps: IProject[] = [
 		title: 'To-Do List - Swift ',
 		description:
 			'Administra tus tareas en una lista de tareas  que puedes agregar, borrar y editar.',
-		githubUrl: 'https://github.com/joeldev/joel.dev',
+		githubUrl: 'https://github.com/joelquispe/TodoList-App-Swift',
 
 		technologies: [dataTecs[ETecs.xcode], dataTecs[ETecs.swift]],
 	},
