@@ -50,6 +50,7 @@ const CardProjectComp = (props: IProps) => {
 					<a
 						href={props.webUrl}
 						onClick={() => setIsBlur(!isBlur)}
+						target="_blank"
 						className={` flex transition-all duration-500 delay-75 ease-in-out items-center px-4 py-2 lg:py-3    text-white bg-slate-900 rounded-md text-sm  ${
 							isBlur ? 'scale-105' : 'scale-0 '
 						}`}
@@ -61,6 +62,7 @@ const CardProjectComp = (props: IProps) => {
 				{props.playStoreUrl != null && (
 					<a
 						href={props.playStoreUrl}
+						target="_blank"
 						onClick={() => setIsBlur(!isBlur)}
 						className={` flex transition-all duration-500 delay-75 ease-in-out items-center px-4 py-2 lg:py-3    text-white bg-slate-900 rounded-md text-sm ${
 							isBlur ? 'scale-105' : 'scale-0 '
@@ -73,6 +75,7 @@ const CardProjectComp = (props: IProps) => {
 				{props.appStoreUrl != null && (
 					<a
 						href={props.appStoreUrl}
+						target="_blank"
 						onClick={() => setIsBlur(!isBlur)}
 						className={` flex transition-all duration-500 delay-75 ease-in-out items-center px-4 py-3   text-white bg-slate-900 rounded-md text-sm ${
 							isBlur ? 'scale-105' : 'scale-0 '
