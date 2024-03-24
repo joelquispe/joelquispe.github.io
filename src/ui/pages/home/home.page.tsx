@@ -11,10 +11,14 @@ const HomePage = () => {
 					alt=""
 					className="object-cover flex items-center rounded-full h-36 w-36 lg:h-60 lg:w-60 object-top mx-auto 2xl:mx-0 mb-8"
 				/>
-
-				<h1 className="text-white text-3xl sm:text-4xl lg:text-5xl text-center lg:text-start mb-3 lg:my-5">
+				
+				
+				<h1 className="text-white text-2xl sm:text-4xl lg:text-5xl text-center lg:text-start mb-3 lg:my-2">
 					Developer Full-Stack
 				</h1>
+				<h2 className="text-gray-400 text-lg md:text-xl  lg:text-2xl  text-center lg:text-start mb-3 lg:mb-5">
+				Joel Alexander Sosaya Quispe
+				</h2>
 				<p className="text-gray-300 text-base sm:text-base lg:text-lg text-center lg:text-start  ">
 				Desarrollador con 2 años de experiencia y 23 años de edad. Apasionado por la innovación tecnológica y comprometido con la excelencia en cada proyecto. Especializado en desarrollo front-end y back-end.
 				</p>
@@ -27,7 +31,7 @@ const HomePage = () => {
 					</div>
 					<div className="cursor-pointer group hover:scale-105 flex  hover:border-b items-center gap-x-3 py-1 transition-all  duration-100 ease-in">
 						<MdWhatsapp className="text-white text-2xl" />
-						<a href='https://wa.link/mk36b9' className="text-lg text-white ">+51 999 999 999</a>
+						<a href='https://wa.link/9dkb5e' className="text-lg text-white ">+51 902309486</a>
 					</div>
 				</div>
 			</div>
