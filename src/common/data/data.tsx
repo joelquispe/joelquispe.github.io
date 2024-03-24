@@ -1,4 +1,3 @@
-import React from 'react';
 import { IProject } from '../interfaces/project.interface';
 import {
 	FaAws,

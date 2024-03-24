@@ -19,21 +19,21 @@ const DrawerComp = forwardRef(
 					<Link
 						to={'/'}
 						style={{ fontFamily: 'Raleway_Regular' }}
-						className="text-2xl font-semibold text-white text-center cursor-pointer"
+						className="text-2xl xl:text-3xl font-semibold text-white text-center cursor-pointer"
 					>
 						Home
 					</Link>
 					<Link
 						to={'/projects'}
 						style={{ fontFamily: 'Raleway_Regular' }}
-						className="text-2xl  font-semibold text-white text-center cursor-pointer"
+						className="text-2xl  xl:text-3xl font-semibold text-white text-center cursor-pointer"
 					>
 						Projects
 					</Link>
 					<Link
 						to={'/technologies'}
 						style={{ fontFamily: 'Raleway_Regular' }}
-						className="xl:hidden text-2xl font-semibold text-white text-center cursor-pointer"
+						className="xl:hidden text-2xl xl:text-3xl font-semibold text-white text-center cursor-pointer"
 					>
 						Technologies
 					</Link>
