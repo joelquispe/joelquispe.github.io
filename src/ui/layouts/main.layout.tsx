@@ -40,7 +40,7 @@ const MainLayout = () => {
               <FaGitlab className="xl:text-3xl"/>
             </a>
             <a
-              href="https://youtube.com/yoecode"
+              href="https://www.youtube.com/channel/UCj2FWnuPMQDm4Rg9z_1mPoA"
               target="_blank"
               className="text-white cursor-pointer mr-3"
             >
