@@ -7,7 +7,7 @@ const HomePage = () => {
 		<div className="grid  2xl:grid-cols-[42%_1fr] items-center gap-x-8 mx-auto 2xl:mx-0  justify-center  w-10/12  sm:w-full px-5 md:px-20 lg:px-40">
 			<div className="">
 				<img
-					src={'/img/profile.jpg'}
+					src={'/img/profile.webp'}
 					alt=""
 					className="object-cover flex items-center rounded-full h-36 w-36 lg:h-60 lg:w-60 object-top mx-auto 2xl:mx-0 mb-8"
 				/>
