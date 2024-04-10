@@ -14,6 +14,13 @@ export default {
       }
     },
   },
+  variants: {
+    extend: {
+      display: ['hover', 'focus'],
+      scale: ['hover', 'focus'],
+    },
+  },
+  
   plugins: [],
 }
 

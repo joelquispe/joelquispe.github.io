@@ -18,15 +18,9 @@ const theme = extendTheme({
 			baseStyle: {
 				tab: {
 					color: 'cyan.500',
-					// bg: 'cyan.900',
+
 					_selected: {
 						color: 'cyan',
-						// _hover: {
-						//   bg: "cyan",
-						// },
-						// _active: {
-						//   bg: "transparent",
-						// },
 					},
 				},
 			},
@@ -37,7 +31,7 @@ const theme = extendTheme({
 const ProjectsPage = () => {
 	return (
 		<ChakraProvider theme={theme}>
-			<div className=" flex flex-col  h-full w-full gap-y-4 pt-5 lg:px-16 2xl:px-28">
+			<div className=" flex flex-col  h-full w-full gap-y-4 pt-5 lg:px-16 2xl:px-28 ">
 				<Tabs size={'md'} variant="customColor" align="center">
 					<TabList>
 						<Tab>Mobile</Tab>
@@ -57,11 +51,12 @@ const ProjectsPage = () => {
 									appStoreUrl={item.appStoreUrl}
 									playStoreUrl={item.playStoreUrl}
 									technologies={item.technologies}
+									images={item.images}
 								/>
 							))}
 						</TabPanel>
 						<TabPanel className="grid xl:grid-cols-2 gap-y-4 xl:gap-x-5 text-start">
-						{dataWebs.map((item) => (
+							{dataWebs.map((item) => (
 								<CardProjectComp
 									key={item.title}
 									title={item.title}
@@ -71,11 +66,12 @@ const ProjectsPage = () => {
 									appStoreUrl={item.appStoreUrl}
 									playStoreUrl={item.playStoreUrl}
 									technologies={item.technologies}
+									images={item.images}
 								/>
 							))}
 						</TabPanel>
 						<TabPanel className="grid  gap-y-4 xl:gap-x-5 text-start">
-							<p className='text-2xl text-center animate-pulse '>En camino</p>
+							<p className="text-2xl text-center animate-pulse ">En camino</p>
 						</TabPanel>
 					</TabPanels>
 				</Tabs>

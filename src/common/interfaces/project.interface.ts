@@ -9,4 +9,5 @@ export interface IProject {
 	playStoreUrl?: string;
 	appStoreUrl?: string;
 	technologies: ITec[];
+	images?: string[];
 }

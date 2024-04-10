@@ -188,6 +188,10 @@ export const dataApps: IProject[] = [
 			'https://play.google.com/store/apps/details?id=com.paqueterias.deliverybox',
 
 		technologies: [dataTecs[ETecs.flutter], dataTecs[ETecs.dart]],
+		images: [
+			'img/deliverybox/deliverybox-phone-1.png',
+			'img/deliverybox/deliverybox-phone-2.png',
+		],
 	},
 	{
 		title: 'Shapp Rides',
@@ -300,6 +304,19 @@ export const dataWebs: IProject[] = [
 			dataTecs[ETecs.angular],
 			dataTecs[ETecs.firebase],
 		],
+	},
+	{
+		title: 'Motric',
+		description:
+			'Página para la venta de repuestos de moto con panel de administración e implementando  firebase como base de datos, autenticación y almacenamiento de fotos .',
+		webUrl: 'https://joelquispe.github.io/YoeCode/',
+		githubUrl: 'https://github.com/joelquispe/YoeCode',
+		technologies: [
+			dataTecs[ETecs.ts],
+			dataTecs[ETecs.react],
+			dataTecs[ETecs.tailwind],
+		],
+		images: ['img/motric/motric-web-1.png'],
 	},
 	{
 		title: 'YoeCode',
