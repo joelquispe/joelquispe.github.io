@@ -1,4 +1,4 @@
-import { MdEmail, MdWhatsapp } from 'react-icons/md';
+import { MdEmail} from 'react-icons/md';
 
 import TechnologiesComp from '../../components/technologies.comp';
 
