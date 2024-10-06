@@ -2,8 +2,8 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.yoecode.house",
+      "package_name": "com.yoecode.yoecodehouse",
       "sha256_cert_fingerprints":
-      ["C6:82:F4:B7:9E:3D:80:4A:12:D0:F7:18:0A:90:37:CB:BE:BE:A0:6A:05:51:BA:EF:2E:C3:46:9D:B8:BB:95:1F"]
+      ["2D:8F:D8:38:5D:77:F2:DF:A0:D3:A2:62:BD:67:0D:78:FA:EB:FD:78:A8:8E:6A:60:CE:AA:BE:D3:5E:57:A7:77"]
     }
   }]
