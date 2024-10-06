@@ -1,9 +1,26 @@
-[{
-    "relation": ["delegate_permission/common.handle_all_urls"],
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.yoecode.yoecodehouse",
-      "sha256_cert_fingerprints":
-      ["2D:8F:D8:38:5D:77:F2:DF:A0:D3:A2:62:BD:67:0D:78:FA:EB:FD:78:A8:8E:6A:60:CE:AA:BE:D3:5E:57:A7:77"]
+      "sha256_cert_fingerprints": [
+        "2D:8F:D8:38:5D:77:F2:DF:A0:D3:A2:62:BD:67:0D:78:FA:EB:FD:78:A8:8E:6A:60:CE:AA:BE:D3:5E:57:A7:77"
+      ]
     }
-  }]
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.yoecode.house",
+      "sha256_cert_fingerprints": [
+        "2D:8F:D8:38:5D:77:F2:DF:A0:D3:A2:62:BD:67:0D:78:FA:EB:FD:78:A8:8E:6A:60:CE:AA:BE:D3:5E:57:A7:77"
+      ]
+    }
+  }
+]
