@@ -86,7 +86,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="flex space-x-6"
+            className="flex flex-wrap justify-center gap-6"
           >
             {socialLinks.map((link) => (
               <motion.a

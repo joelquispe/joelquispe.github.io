@@ -154,7 +154,7 @@ export default function AboutSection() {
                 Conecta conmigo
               </h4>
 
-              <div className="flex space-x-4 pt-4">
+              <div className="flex flex-wrap lg:justify-start justify-center gap-4 pt-4">
                 {socialLinks.map((link) => (
                   <motion.a
                     key={link.name}
